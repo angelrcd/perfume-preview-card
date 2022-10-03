@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-color-green: #3d8168;
+  --font-color-grey: #b6b5bc;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1920px;
+  height: 1060px;
+  background: hsl(30deg 38% 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 1200px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+}
+
+.product-info {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  box-sizing: border-box;
+  padding: 4%;
+}
+
+.product-type {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 150%;
+  color: var(--font-color-grey);
+}
+
+.name-extended {
+  width: 100%;
+  height: 100%;
+  font-family: Fraunces, serif;
+  font-weight: 700;
+  font-size: 250%;
+  line-height: 180%;
+}
+
+.description {
+  width: 100%;
+  height: 100%;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 180%;
+  color: var(--font-color-grey);
+}
+
+.price {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-price {
+  width: 100%;
+  text-align: center;
+  font-family: Fraunces, serif;
+  font-weight: 700;
+  font-size: 400%;
+  color: var(--font-color-green);
+}
+
+.old-price {
+  width: 100%;
+  margin-left: 30px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 150%;
+  text-decoration: line-through;
+  color: var(--font-color-grey);
+}
+
+.button-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 150%;
+  color: white;
+  cursor: pointer;
+  background-color: var(--font-color-green);
+  border: none;
+  border-radius: 10px;
+  transition-duration: all 0.4s;
+}
+
+button:hover {
+  background-color: #3d8168b9;
+  border: 4px solid #3d8168;
+}
+
+button:active {
+  box-shadow: -5px -5px 10px #3d8168b9 inset;
+}
